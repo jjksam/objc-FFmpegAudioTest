@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E759FCBB17C63249007D4C6A /* libbz2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E759FCBA17C63249007D4C6A /* libbz2.1.0.dylib */; };
+		E759FCBF17C6326F007D4C6A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E759FCBE17C6326F007D4C6A /* Default-568h@2x.png */; };
 		FC7190CD158DE146008A5389 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7190CC158DE146008A5389 /* UIKit.framework */; };
 		FC7190CF158DE146008A5389 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7190CE158DE146008A5389 /* Foundation.framework */; };
 		FC7190D1158DE146008A5389 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7190D0158DE146008A5389 /* CoreGraphics.framework */; };
@@ -26,10 +28,11 @@
 		FCC0361F1593973C00DBE3B5 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC0361A1593973C00DBE3B5 /* libavutil.a */; };
 		FCC036201593973C00DBE3B5 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC0361B1593973C00DBE3B5 /* libswscale.a */; };
 		FCC036231593984C00DBE3B5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC036221593984C00DBE3B5 /* libz.dylib */; };
-		FCC036251593988000DBE3B5 /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC036241593988000DBE3B5 /* libbz2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E759FCBA17C63249007D4C6A /* libbz2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.1.0.dylib; path = usr/lib/libbz2.1.0.dylib; sourceTree = SDKROOT; };
+		E759FCBE17C6326F007D4C6A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FC7190C8158DE146008A5389 /* FFmpegAudioTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFmpegAudioTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7190CC158DE146008A5389 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FC7190CE158DE146008A5389 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,7 +58,6 @@
 		FCC0361A1593973C00DBE3B5 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
 		FCC0361B1593973C00DBE3B5 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
 		FCC036221593984C00DBE3B5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		FCC036241593988000DBE3B5 /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCC036251593988000DBE3B5 /* libbz2.dylib in Frameworks */,
+				E759FCBB17C63249007D4C6A /* libbz2.1.0.dylib in Frameworks */,
 				FCC036231593984C00DBE3B5 /* libz.dylib in Frameworks */,
 				FC7190F5158DE7AB008A5389 /* AudioToolbox.framework in Frameworks */,
 				FC7190F6158DE7AB008A5389 /* AVFoundation.framework in Frameworks */,
@@ -101,7 +103,7 @@
 		FC7190CB158DE146008A5389 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FCC036241593988000DBE3B5 /* libbz2.dylib */,
+				E759FCBA17C63249007D4C6A /* libbz2.1.0.dylib */,
 				FCC036221593984C00DBE3B5 /* libz.dylib */,
 				FC7190F3158DE7AB008A5389 /* AudioToolbox.framework */,
 				FC7190F4158DE7AB008A5389 /* AVFoundation.framework */,
@@ -133,6 +135,7 @@
 		FC7190D3158DE146008A5389 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E759FCBE17C6326F007D4C6A /* Default-568h@2x.png */,
 				FC7190D4158DE146008A5389 /* FFmpegAudioTest-Info.plist */,
 				FC7190D5158DE146008A5389 /* InfoPlist.strings */,
 				FC7190D8158DE146008A5389 /* main.m */,
@@ -216,6 +219,7 @@
 				FC7190E3158DE146008A5389 /* ViewController_iPhone.xib in Resources */,
 				FC7190E6158DE146008A5389 /* ViewController_iPad.xib in Resources */,
 				FC7190F9158DED0D008A5389 /* sample.flv in Resources */,
+				E759FCBF17C6326F007D4C6A /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
