@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1199C6761AD23CA400A0269A /* sample.flv in Resources */ = {isa = PBXBuildFile; fileRef = 1199C6751AD23C9D00A0269A /* sample.flv */; };
 		E759FCBB17C63249007D4C6A /* libbz2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E759FCBA17C63249007D4C6A /* libbz2.1.0.dylib */; };
 		E759FCBF17C6326F007D4C6A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E759FCBE17C6326F007D4C6A /* Default-568h@2x.png */; };
 		FC7190CD158DE146008A5389 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7190CC158DE146008A5389 /* UIKit.framework */; };
@@ -20,7 +21,6 @@
 		FC7190E6158DE146008A5389 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7190E4158DE146008A5389 /* ViewController_iPad.xib */; };
 		FC7190F5158DE7AB008A5389 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7190F3158DE7AB008A5389 /* AudioToolbox.framework */; };
 		FC7190F6158DE7AB008A5389 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7190F4158DE7AB008A5389 /* AVFoundation.framework */; };
-		FC7190F9158DED0D008A5389 /* sample.flv in Resources */ = {isa = PBXBuildFile; fileRef = FC7190F8158DED0D008A5389 /* sample.flv */; };
 		FC7190FC158DF056008A5389 /* FFmpegDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7190FB158DF056008A5389 /* FFmpegDecoder.m */; };
 		FCC0361C1593973C00DBE3B5 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC036171593973C00DBE3B5 /* libavcodec.a */; };
 		FCC0361D1593973C00DBE3B5 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC036181593973C00DBE3B5 /* libavdevice.a */; };
@@ -31,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1199C6751AD23C9D00A0269A /* sample.flv */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.flv; sourceTree = "<group>"; };
 		E759FCBA17C63249007D4C6A /* libbz2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.1.0.dylib; path = usr/lib/libbz2.1.0.dylib; sourceTree = SDKROOT; };
 		E759FCBE17C6326F007D4C6A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FC7190C8158DE146008A5389 /* FFmpegAudioTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFmpegAudioTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,7 +50,6 @@
 		FC7190E5158DE146008A5389 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		FC7190F3158DE7AB008A5389 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FC7190F4158DE7AB008A5389 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		FC7190F8158DED0D008A5389 /* sample.flv */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.flv; sourceTree = "<group>"; };
 		FC7190FA158DF056008A5389 /* FFmpegDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFmpegDecoder.h; sourceTree = "<group>"; };
 		FC7190FB158DF056008A5389 /* FFmpegDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFmpegDecoder.m; sourceTree = "<group>"; };
 		FCC036171593973C00DBE3B5 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavcodec.a; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 		FC7190F7158DED0D008A5389 /* sample */ = {
 			isa = PBXGroup;
 			children = (
-				FC7190F8158DED0D008A5389 /* sample.flv */,
+				1199C6751AD23C9D00A0269A /* sample.flv */,
 			);
 			path = sample;
 			sourceTree = "<group>";
@@ -192,6 +192,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0430;
+				TargetAttributes = {
+					FC7190C7158DE146008A5389 = {
+						DevelopmentTeam = 7VAFW6Q325;
+					};
+				};
 			};
 			buildConfigurationList = FC7190C2158DE146008A5389 /* Build configuration list for PBXProject "FFmpegAudioTest" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -218,8 +223,8 @@
 				FC7190D7158DE146008A5389 /* InfoPlist.strings in Resources */,
 				FC7190E3158DE146008A5389 /* ViewController_iPhone.xib in Resources */,
 				FC7190E6158DE146008A5389 /* ViewController_iPad.xib in Resources */,
-				FC7190F9158DED0D008A5389 /* sample.flv in Resources */,
 				E759FCBF17C6326F007D4C6A /* Default-568h@2x.png in Resources */,
+				1199C6761AD23CA400A0269A /* sample.flv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +322,7 @@
 		FC7190EA158DE146008A5389 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FFmpegAudioTest/FFmpegAudioTest-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -324,6 +330,7 @@
 					"\"$(SRCROOT)/FFmpeg\"",
 				);
 				INFOPLIST_FILE = "FFmpegAudioTest/FFmpegAudioTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/FFmpeg/lib\"",
@@ -337,6 +344,7 @@
 		FC7190EB158DE146008A5389 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FFmpegAudioTest/FFmpegAudioTest-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -344,6 +352,7 @@
 					"\"$(SRCROOT)/FFmpeg\"",
 				);
 				INFOPLIST_FILE = "FFmpegAudioTest/FFmpegAudioTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/FFmpeg/lib\"",

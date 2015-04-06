@@ -1,9 +1,10 @@
-FFmpegを利用したバックグラウンドオーディオ再生のテストアプリ
-再生、一時停止、停止、シークとか確認してみた。
-iOS Audio Queue Servicesを使ってみた。iPhoneでのみ確認。
+Test app which have background audio play back using FFmpeg
+play、pause、stop
 
-FFmpegディレクトリ内で下記のコマンドを実行しライブラリをビルドする。
+iOS Audio Queue Services was used, I’ve tested in iPhone/iPad.
+
+To Build the ffmpeg library, run the following command in the directory.
 ./build_universal
 
-FLVファイル（今回はFLVコンテナ内にMP3フォーマットのオーディオを格納）を読み込み、
-FFmpegでデコード（PCM16LE）したものをiOS Audio Queue Servicesを使って再生させる。
+FLV file (file format that containing MP3) is read
+using ffmpeg to decode the data to PCM16LE for iOS Audio Queue service play back.
